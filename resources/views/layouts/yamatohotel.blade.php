@@ -36,7 +36,7 @@
         <nav>
             <ul class="main-nav">
                 <li><a href="/guest">利用者一覧</a></li>
-                <li><a href="/reserve">予約一覧</a></li>
+                <li><a href="/yoyaku">予約一覧</a></li>
             </ul>
             <ul class="main-nav">
                 <li><a href="/guest/add">利用者一覧</a></li>

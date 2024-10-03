@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/guest',[GuestController::class, 'index']);
+Route::get('/yoyaku',[YoyakuController::class, 'index']);

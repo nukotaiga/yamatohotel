@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('yoyakus', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('guest_id');
+        Schema::create('roomtypes', function (Blueprint $table) {
+            $table->id('roomtypeid');
+            $table->integer('name');
             $table->integer('number');
-            $table->date('checkin');
-            $table->date('checkout');
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('yoyakus');
+        Schema::dropIfExists('roomtypes');
     }
 };
